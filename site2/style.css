@@ -1,0 +1,124 @@
+header{
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 75vh;/*---*/
+}
+nav{
+   justify-content: space-between;
+   padding-top: 30px;
+}
+nav a{
+    display: inline-block;
+    font: 300 2em 'Open Sans', sans-serif;
+    color: #FFF;
+}
+nav img{
+    margin-right: 10px;
+}
+nav i{
+    font-size: 26px;
+    color: #FFF;
+}
+header section{
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header section h1{
+    font: 300 3.25em 'Open Sans', sans-serif;
+    text-align: center;
+    color: #FFF;
+    letter-spacing: 2px;
+}
+header section form{
+    margin-top: 25px;
+    display: flex;
+}
+header section input{
+    width: 325px;
+    height: 40px;
+}
+header section button{
+    width: 120px;
+    height: 40px;
+    font: 700 1em 'Open Sans', sans-serif;
+    text-align: center;
+    color: #FFF;
+    letter-spacing: 1px;
+    background-color: #fd4f32;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+header section input::placeholder{
+    font: 400 1em 'Open Sans', sans-serif;
+    color: #8b8b8b;
+    letter-spacing: 1px;
+    padding-left: 15px;
+}
+#bir{
+    background: #eee;
+}
+#bir h3{
+    font: 400 0.9375em 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #323232;
+    letter-spacing: 0;
+    margin-top: 60px;
+}
+#bir .container > p{
+    font: 400 1em 'Montserrat', sans-serif;
+    color: #8b8b8b;
+    letter-spacing: 0;
+    margin-top: 13px;
+    margin-bottom: 35px;
+}
+#bir .container{
+    flex-direction: column;
+}
+#tours{
+    display: flex;
+    margin-bottom: 70px;
+}
+.tour{
+    background: #FFF;
+    margin-right: 15px;
+}
+.tour h4{
+    font: 400  .875em 'Montserrat', sans-serif;
+    color: #323232;
+    letter-spacing: 0;
+}
+.tour p{
+    font: 400  .8125em 'Open Sans', sans-serif;
+    color: #696969;
+    letter-spacing: 0;
+}
+
+.container{
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+   nav{
+     padding: 30px 15px 0 15px;   
+   }
+   header section form{
+       flex-direction: column;
+       width: 80%;
+    }
+    header section button,header section input{
+        width: 100%;
+    }
+   
+  }
+  @media only screen and (max-width: 768px) {
+      .tours{
+        flex-direction: column;
+        width: 80%;
+      }
+  }
